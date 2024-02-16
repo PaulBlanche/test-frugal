@@ -3,10 +3,10 @@
 	"version": "1.0.0",
 	"type": "module",
 	"dependencies": {
-		"@frugal/exporter-vercel": "file:./frugal-node/packages/exporter-vercel",
-		"@frugal/plugin-css": "file:./frugal-node/packages/plugin-css",
-		"@frugal/plugin-script": "file:./frugal-node/packages/plugin-script",
-		"frugal": "file:./frugal-node/packages/frugal"
+		"@frugal-node/exporter-vercel": "~0.1.0",
+		"@frugal-node/plugin-css": "~0.1.0",
+		"@frugal-node/plugin-script": "~0.1.0",
+		"frugal-node": "~0.1.0"
 	},
 	"scripts": {
 		"build": "node build.js"
