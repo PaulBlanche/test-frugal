@@ -6,7 +6,7 @@
 		"@frugal/exporter-vercel": "file:../frugal/packages/exporter-vercel",
 		"@frugal/plugin-css": "file:../frugal/packages/plugin-css",
 		"@frugal/plugin-script": "file:../frugal/packages/plugin-script",
-		"@vercel/routing-utils": "^3.1.0",
+		"dotenv": "^16.4.4",
 		"frugal": "file:../frugal/packages/frugal"
 	}
 }
