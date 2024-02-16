@@ -1,182 +1,177 @@
 {
   "inputs": {
-    "../node_modules/crypto-js/core.js": {
+    "../frugal/node_modules/crypto-js/core.js": {
       "bytes": 23629,
       "imports": [
         {
           "path": "crypto",
           "kind": "require-call",
           "external": true
-        },
-        {
-          "path": "<runtime>",
-          "kind": "import-statement",
-          "external": true
         }
       ],
       "format": "cjs"
     },
-    "../node_modules/crypto-js/enc-hex.js": {
+    "../frugal/node_modules/crypto-js/enc-hex.js": {
       "bytes": 359,
       "imports": [
         {
-          "path": "../node_modules/crypto-js/core.js",
+          "path": "../frugal/node_modules/crypto-js/core.js",
           "kind": "require-call",
           "original": "./core"
         }
       ],
       "format": "cjs"
     },
-    "../node_modules/crypto-js/sha1.js": {
+    "../frugal/node_modules/crypto-js/sha1.js": {
       "bytes": 4063,
       "imports": [
         {
-          "path": "../node_modules/crypto-js/core.js",
+          "path": "../frugal/node_modules/crypto-js/core.js",
           "kind": "require-call",
           "original": "./core"
         }
       ],
       "format": "cjs"
     },
-    "../node_modules/@upstash/redis/chunk-SMBYCQIJ.js": {
+    "../frugal/node_modules/@upstash/redis/chunk-SMBYCQIJ.js": {
       "bytes": 56565,
       "imports": [
         {
-          "path": "../node_modules/crypto-js/enc-hex.js",
+          "path": "../frugal/node_modules/crypto-js/enc-hex.js",
           "kind": "require-call",
           "original": "crypto-js/enc-hex.js"
         },
         {
-          "path": "../node_modules/crypto-js/sha1.js",
+          "path": "../frugal/node_modules/crypto-js/sha1.js",
           "kind": "require-call",
           "original": "crypto-js/sha1.js"
         }
       ],
       "format": "cjs"
     },
-    "../node_modules/@upstash/redis/nodejs.js": {
+    "../frugal/node_modules/@upstash/redis/nodejs.js": {
       "bytes": 2370,
       "imports": [
         {
-          "path": "../node_modules/@upstash/redis/chunk-SMBYCQIJ.js",
+          "path": "../frugal/node_modules/@upstash/redis/chunk-SMBYCQIJ.js",
           "kind": "require-call",
           "original": "./chunk-SMBYCQIJ.js"
         }
       ],
       "format": "cjs"
     },
-    "../node_modules/@vercel/kv/dist/index.js": {
+    "../frugal/node_modules/@vercel/kv/dist/index.js": {
       "bytes": 3267,
       "imports": [
         {
-          "path": "../node_modules/@upstash/redis/nodejs.js",
+          "path": "../frugal/node_modules/@upstash/redis/nodejs.js",
           "kind": "import-statement",
           "original": "@upstash/redis"
         }
       ],
       "format": "esm"
     },
-    "../node_modules/cookie/index.js": {
+    "../frugal/node_modules/cookie/index.js": {
       "bytes": 5281,
       "imports": [],
       "format": "cjs"
     },
-    "../packages/frugal/src/utils/http/_type/cookies.js": {
+    "../frugal/packages/frugal/src/utils/http/_type/cookies.js": {
       "bytes": 93,
       "imports": [],
       "format": "esm"
     },
-    "../packages/frugal/src/utils/http/cookies.js": {
+    "../frugal/packages/frugal/src/utils/http/cookies.js": {
       "bytes": 854,
       "imports": [
         {
-          "path": "../node_modules/cookie/index.js",
+          "path": "../frugal/node_modules/cookie/index.js",
           "kind": "import-statement",
           "original": "cookie"
         },
         {
-          "path": "../packages/frugal/src/utils/http/_type/cookies.js",
+          "path": "../frugal/packages/frugal/src/utils/http/_type/cookies.js",
           "kind": "import-statement",
           "original": "./_type/cookies.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/utils/_type/jsonValue.js": {
+    "../frugal/packages/frugal/src/utils/_type/jsonValue.js": {
       "bytes": 93,
       "imports": [],
       "format": "esm"
     },
-    "../packages/frugal/src/utils/jsonValue.js": {
+    "../frugal/packages/frugal/src/utils/jsonValue.js": {
       "bytes": 1356,
       "imports": [
         {
-          "path": "../packages/frugal/src/utils/_type/jsonValue.js",
+          "path": "../frugal/packages/frugal/src/utils/_type/jsonValue.js",
           "kind": "import-statement",
           "original": "./_type/jsonValue.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/page/_type/Response.js": {
+    "../frugal/packages/frugal/src/page/_type/Response.js": {
       "bytes": 93,
       "imports": [],
       "format": "esm"
     },
-    "../packages/frugal/src/page/PageResponse.js": {
+    "../frugal/packages/frugal/src/page/PageResponse.js": {
       "bytes": 1514,
       "imports": [
         {
-          "path": "../packages/frugal/src/utils/http/cookies.js",
+          "path": "../frugal/packages/frugal/src/utils/http/cookies.js",
           "kind": "import-statement",
           "original": "../utils/http/cookies.js"
         },
         {
-          "path": "../packages/frugal/src/utils/jsonValue.js",
+          "path": "../frugal/packages/frugal/src/utils/jsonValue.js",
           "kind": "import-statement",
           "original": "../utils/jsonValue.js"
         },
         {
-          "path": "../packages/frugal/src/page/_type/Response.js",
+          "path": "../frugal/packages/frugal/src/page/_type/Response.js",
           "kind": "import-statement",
           "original": "./_type/Response.js"
         }
       ],
       "format": "esm"
     },
-    "../node_modules/imurmurhash/imurmurhash.js": {
+    "../frugal/node_modules/imurmurhash/imurmurhash.js": {
       "bytes": 4412,
       "imports": [],
       "format": "cjs"
     },
-    "../packages/frugal/src/utils/hash.js": {
+    "../frugal/packages/frugal/src/utils/hash.js": {
       "bytes": 614,
       "imports": [
         {
-          "path": "../node_modules/imurmurhash/imurmurhash.js",
+          "path": "../frugal/node_modules/imurmurhash/imurmurhash.js",
           "kind": "import-statement",
           "original": "imurmurhash"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/utils/_type/deferred.js": {
+    "../frugal/packages/frugal/src/utils/_type/deferred.js": {
       "bytes": 93,
       "imports": [],
       "format": "esm"
     },
-    "../packages/frugal/src/utils/deferred.js": {
+    "../frugal/packages/frugal/src/utils/deferred.js": {
       "bytes": 656,
       "imports": [
         {
-          "path": "../packages/frugal/src/utils/_type/deferred.js",
+          "path": "../frugal/packages/frugal/src/utils/_type/deferred.js",
           "kind": "import-statement",
           "original": "./_type/deferred.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/utils/readableStream.js": {
+    "../frugal/packages/frugal/src/utils/readableStream.js": {
       "bytes": 4513,
       "imports": [
         {
@@ -185,19 +180,19 @@
           "external": true
         },
         {
-          "path": "../packages/frugal/src/utils/deferred.js",
+          "path": "../frugal/packages/frugal/src/utils/deferred.js",
           "kind": "import-statement",
           "original": "./deferred.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/page/_type/GenerationResponse.js": {
+    "../frugal/packages/frugal/src/page/_type/GenerationResponse.js": {
       "bytes": 93,
       "imports": [],
       "format": "esm"
     },
-    "../packages/frugal/src/page/GenerationResponse.js": {
+    "../frugal/packages/frugal/src/page/GenerationResponse.js": {
       "bytes": 2792,
       "imports": [
         {
@@ -206,39 +201,39 @@
           "external": true
         },
         {
-          "path": "../packages/frugal/src/page/PageResponse.js",
+          "path": "../frugal/packages/frugal/src/page/PageResponse.js",
           "kind": "import-statement",
           "original": "../page/PageResponse.js"
         },
         {
-          "path": "../packages/frugal/src/utils/hash.js",
+          "path": "../frugal/packages/frugal/src/utils/hash.js",
           "kind": "import-statement",
           "original": "../utils/hash.js"
         },
         {
-          "path": "../packages/frugal/src/utils/jsonValue.js",
+          "path": "../frugal/packages/frugal/src/utils/jsonValue.js",
           "kind": "import-statement",
           "original": "../utils/jsonValue.js"
         },
         {
-          "path": "../packages/frugal/src/utils/readableStream.js",
+          "path": "../frugal/packages/frugal/src/utils/readableStream.js",
           "kind": "import-statement",
           "original": "../utils/readableStream.js"
         },
         {
-          "path": "../packages/frugal/src/page/_type/GenerationResponse.js",
+          "path": "../frugal/packages/frugal/src/page/_type/GenerationResponse.js",
           "kind": "import-statement",
           "original": "./_type/GenerationResponse.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/utils/_type/fs.js": {
+    "../frugal/packages/frugal/src/utils/_type/fs.js": {
       "bytes": 93,
       "imports": [],
       "format": "esm"
     },
-    "../packages/frugal/src/utils/fs.js": {
+    "../frugal/packages/frugal/src/utils/fs.js": {
       "bytes": 3874,
       "imports": [
         {
@@ -262,19 +257,19 @@
           "external": true
         },
         {
-          "path": "../packages/frugal/src/utils/_type/fs.js",
+          "path": "../frugal/packages/frugal/src/utils/_type/fs.js",
           "kind": "import-statement",
           "original": "./_type/fs.js"
         }
       ],
       "format": "esm"
     },
-    "../node_modules/chalk/source/vendor/ansi-styles/index.js": {
+    "../frugal/node_modules/chalk/source/vendor/ansi-styles/index.js": {
       "bytes": 5256,
       "imports": [],
       "format": "esm"
     },
-    "../node_modules/chalk/source/vendor/supports-color/index.js": {
+    "../frugal/node_modules/chalk/source/vendor/supports-color/index.js": {
       "bytes": 3855,
       "imports": [
         {
@@ -295,80 +290,80 @@
       ],
       "format": "esm"
     },
-    "../node_modules/chalk/source/utilities.js": {
+    "../frugal/node_modules/chalk/source/utilities.js": {
       "bytes": 997,
       "imports": [],
       "format": "esm"
     },
-    "../node_modules/chalk/source/index.js": {
+    "../frugal/node_modules/chalk/source/index.js": {
       "bytes": 5902,
       "imports": [
         {
-          "path": "../node_modules/chalk/source/vendor/ansi-styles/index.js",
+          "path": "../frugal/node_modules/chalk/source/vendor/ansi-styles/index.js",
           "kind": "import-statement",
           "original": "#ansi-styles"
         },
         {
-          "path": "../node_modules/chalk/source/vendor/supports-color/index.js",
+          "path": "../frugal/node_modules/chalk/source/vendor/supports-color/index.js",
           "kind": "import-statement",
           "original": "#supports-color"
         },
         {
-          "path": "../node_modules/chalk/source/utilities.js",
+          "path": "../frugal/node_modules/chalk/source/utilities.js",
           "kind": "import-statement",
           "original": "./utilities.js"
         },
         {
-          "path": "../node_modules/chalk/source/vendor/ansi-styles/index.js",
+          "path": "../frugal/node_modules/chalk/source/vendor/ansi-styles/index.js",
           "kind": "import-statement",
           "original": "./vendor/ansi-styles/index.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/utils/_type/log.js": {
+    "../frugal/packages/frugal/src/utils/_type/log.js": {
       "bytes": 93,
       "imports": [],
       "format": "esm"
     },
-    "../packages/frugal/src/utils/log.js": {
+    "../frugal/packages/frugal/src/utils/log.js": {
       "bytes": 3937,
       "imports": [
         {
-          "path": "../node_modules/chalk/source/index.js",
+          "path": "../frugal/node_modules/chalk/source/index.js",
           "kind": "import-statement",
           "original": "chalk"
         },
         {
-          "path": "../packages/frugal/src/utils/_type/log.js",
+          "path": "../frugal/packages/frugal/src/utils/_type/log.js",
           "kind": "import-statement",
           "original": "./_type/log.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/builder/_type/BuildCache.js": {
+    "../frugal/packages/frugal/src/builder/_type/BuildCache.js": {
       "bytes": 93,
       "imports": [],
       "format": "esm"
     },
-    "../packages/frugal/src/builder/BuildCache.js": {
+    "../frugal/packages/frugal/src/builder/BuildCache.js": {
       "bytes": 95,
       "imports": [
         {
-          "path": "../packages/frugal/src/builder/_type/BuildCache.js",
+          "path": "../frugal/packages/frugal/src/builder/_type/BuildCache.js",
           "kind": "import-statement",
           "original": "./_type/BuildCache.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/builder/_type/Cache.js": {
+    "../frugal/packages/frugal/src/builder/_type/Cache.js": {
       "bytes": 93,
       "imports": [],
       "format": "esm"
     },
-    "../packages/frugal/src/builder/Cache.js": {
+    "../frugal/packages/frugal/src/builder/Cache.js": {
       "bytes": 4669,
       "imports": [
         {
@@ -377,49 +372,49 @@
           "external": true
         },
         {
-          "path": "../packages/frugal/src/page/GenerationResponse.js",
+          "path": "../frugal/packages/frugal/src/page/GenerationResponse.js",
           "kind": "import-statement",
           "original": "../page/GenerationResponse.js"
         },
         {
-          "path": "../packages/frugal/src/utils/fs.js",
+          "path": "../frugal/packages/frugal/src/utils/fs.js",
           "kind": "import-statement",
           "original": "../utils/fs.js"
         },
         {
-          "path": "../packages/frugal/src/utils/hash.js",
+          "path": "../frugal/packages/frugal/src/utils/hash.js",
           "kind": "import-statement",
           "original": "../utils/hash.js"
         },
         {
-          "path": "../packages/frugal/src/utils/jsonValue.js",
+          "path": "../frugal/packages/frugal/src/utils/jsonValue.js",
           "kind": "import-statement",
           "original": "../utils/jsonValue.js"
         },
         {
-          "path": "../packages/frugal/src/utils/log.js",
+          "path": "../frugal/packages/frugal/src/utils/log.js",
           "kind": "import-statement",
           "original": "../utils/log.js"
         },
         {
-          "path": "../packages/frugal/src/builder/BuildCache.js",
+          "path": "../frugal/packages/frugal/src/builder/BuildCache.js",
           "kind": "import-statement",
           "original": "./BuildCache.js"
         },
         {
-          "path": "../packages/frugal/src/builder/_type/Cache.js",
+          "path": "../frugal/packages/frugal/src/builder/_type/Cache.js",
           "kind": "import-statement",
           "original": "./_type/Cache.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/_type/Config.js": {
+    "../frugal/packages/frugal/src/_type/Config.js": {
       "bytes": 93,
       "imports": [],
       "format": "esm"
     },
-    "../packages/frugal/src/Config.js": {
+    "../frugal/packages/frugal/src/Config.js": {
       "bytes": 3253,
       "imports": [
         {
@@ -433,29 +428,29 @@
           "external": true
         },
         {
-          "path": "../packages/frugal/src/_type/Config.js",
+          "path": "../frugal/packages/frugal/src/_type/Config.js",
           "kind": "import-statement",
           "original": "./_type/Config.js"
         },
         {
-          "path": "../packages/frugal/src/utils/fs.js",
+          "path": "../frugal/packages/frugal/src/utils/fs.js",
           "kind": "import-statement",
           "original": "./utils/fs.js"
         },
         {
-          "path": "../packages/frugal/src/utils/log.js",
+          "path": "../frugal/packages/frugal/src/utils/log.js",
           "kind": "import-statement",
           "original": "./utils/log.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/builder/_type/Manifest.js": {
+    "../frugal/packages/frugal/src/builder/_type/Manifest.js": {
       "bytes": 93,
       "imports": [],
       "format": "esm"
     },
-    "../packages/frugal/src/builder/Manifest.js": {
+    "../frugal/packages/frugal/src/builder/Manifest.js": {
       "bytes": 3167,
       "imports": [
         {
@@ -464,118 +459,118 @@
           "external": true
         },
         {
-          "path": "../packages/frugal/src/Config.js",
+          "path": "../frugal/packages/frugal/src/Config.js",
           "kind": "import-statement",
           "original": "../Config.js"
         },
         {
-          "path": "../packages/frugal/src/utils/fs.js",
+          "path": "../frugal/packages/frugal/src/utils/fs.js",
           "kind": "import-statement",
           "original": "../utils/fs.js"
         },
         {
-          "path": "../packages/frugal/src/utils/hash.js",
+          "path": "../frugal/packages/frugal/src/utils/hash.js",
           "kind": "import-statement",
           "original": "../utils/hash.js"
         },
         {
-          "path": "../packages/frugal/src/utils/log.js",
+          "path": "../frugal/packages/frugal/src/utils/log.js",
           "kind": "import-statement",
           "original": "../utils/log.js"
         },
         {
-          "path": "../packages/frugal/src/builder/_type/Manifest.js",
+          "path": "../frugal/packages/frugal/src/builder/_type/Manifest.js",
           "kind": "import-statement",
           "original": "./_type/Manifest.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/exports/exporter/index.js": {
+    "../frugal/packages/frugal/exports/exporter/index.js": {
       "bytes": 91,
       "imports": [
         {
-          "path": "../packages/frugal/src/builder/Cache.js",
+          "path": "../frugal/packages/frugal/src/builder/Cache.js",
           "kind": "import-statement",
           "original": "../../src/builder/Cache.js"
         },
         {
-          "path": "../packages/frugal/src/builder/Manifest.js",
+          "path": "../frugal/packages/frugal/src/builder/Manifest.js",
           "kind": "import-statement",
           "original": "../../src/builder/Manifest.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/exporter-vercel/src/KvStorage.js": {
+    "../frugal/packages/exporter-vercel/src/KvStorage.js": {
       "bytes": 741,
       "imports": [
         {
-          "path": "../node_modules/@vercel/kv/dist/index.js",
+          "path": "../frugal/node_modules/@vercel/kv/dist/index.js",
           "kind": "import-statement",
           "original": "@vercel/kv"
         },
         {
-          "path": "../packages/frugal/exports/exporter/index.js",
+          "path": "../frugal/packages/frugal/exports/exporter/index.js",
           "kind": "import-statement",
           "original": "frugal/exporter"
         }
       ],
       "format": "esm"
     },
-    "../node_modules/path-to-regexp/dist/index.js": {
+    "../frugal/node_modules/path-to-regexp/dist/index.js": {
       "bytes": 12534,
       "imports": [],
       "format": "cjs"
     },
-    "../node_modules/zod/lib/index.mjs": {
+    "../frugal/node_modules/zod/lib/index.mjs": {
       "bytes": 139540,
       "imports": [],
       "format": "esm"
     },
-    "../packages/frugal/src/page/_type/PageDescriptor.js": {
+    "../frugal/packages/frugal/src/page/_type/PageDescriptor.js": {
       "bytes": 93,
       "imports": [],
       "format": "esm"
     },
-    "../packages/frugal/src/page/PageDescriptor.js": {
+    "../frugal/packages/frugal/src/page/PageDescriptor.js": {
       "bytes": 4901,
       "imports": [
         {
-          "path": "../node_modules/zod/lib/index.mjs",
+          "path": "../frugal/node_modules/zod/lib/index.mjs",
           "kind": "import-statement",
           "original": "zod"
         },
         {
-          "path": "../packages/frugal/src/utils/jsonValue.js",
+          "path": "../frugal/packages/frugal/src/utils/jsonValue.js",
           "kind": "import-statement",
           "original": "../utils/jsonValue.js"
         },
         {
-          "path": "../packages/frugal/src/page/_type/PageDescriptor.js",
+          "path": "../frugal/packages/frugal/src/page/_type/PageDescriptor.js",
           "kind": "import-statement",
           "original": "./_type/PageDescriptor.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/page/_type/PathObject.js": {
+    "../frugal/packages/frugal/src/page/_type/PathObject.js": {
       "bytes": 93,
       "imports": [],
       "format": "esm"
     },
-    "../packages/frugal/src/page/PathObject.js": {
+    "../frugal/packages/frugal/src/page/PathObject.js": {
       "bytes": 217,
       "imports": [
         {
-          "path": "../packages/frugal/src/page/_type/PathObject.js",
+          "path": "../frugal/packages/frugal/src/page/_type/PathObject.js",
           "kind": "import-statement",
           "original": "./_type/PathObject.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/page/Page.js": {
+    "../frugal/packages/frugal/src/page/Page.js": {
       "bytes": 9236,
       "imports": [
         {
@@ -584,147 +579,147 @@
           "external": true
         },
         {
-          "path": "../node_modules/path-to-regexp/dist/index.js",
+          "path": "../frugal/node_modules/path-to-regexp/dist/index.js",
           "kind": "import-statement",
           "original": "path-to-regexp"
         },
         {
-          "path": "../packages/frugal/src/utils/jsonValue.js",
+          "path": "../frugal/packages/frugal/src/utils/jsonValue.js",
           "kind": "import-statement",
           "original": "../utils/jsonValue.js"
         },
         {
-          "path": "../packages/frugal/src/utils/log.js",
+          "path": "../frugal/packages/frugal/src/utils/log.js",
           "kind": "import-statement",
           "original": "../utils/log.js"
         },
         {
-          "path": "../packages/frugal/src/page/PageDescriptor.js",
+          "path": "../frugal/packages/frugal/src/page/PageDescriptor.js",
           "kind": "import-statement",
           "original": "./PageDescriptor.js"
         },
         {
-          "path": "../packages/frugal/src/page/PageResponse.js",
+          "path": "../frugal/packages/frugal/src/page/PageResponse.js",
           "kind": "import-statement",
           "original": "./PageResponse.js"
         },
         {
-          "path": "../packages/frugal/src/page/PathObject.js",
+          "path": "../frugal/packages/frugal/src/page/PathObject.js",
           "kind": "import-statement",
           "original": "./PathObject.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/page/_type/Assets.js": {
+    "../frugal/packages/frugal/src/page/_type/Assets.js": {
       "bytes": 93,
       "imports": [],
       "format": "esm"
     },
-    "../packages/frugal/src/page/Assets.js": {
+    "../frugal/packages/frugal/src/page/Assets.js": {
       "bytes": 846,
       "imports": [
         {
-          "path": "../packages/frugal/src/page/_type/Assets.js",
+          "path": "../frugal/packages/frugal/src/page/_type/Assets.js",
           "kind": "import-statement",
           "original": "./_type/Assets.js"
         },
         {
-          "path": "../packages/frugal/src/page/_type/Assets.js",
+          "path": "../frugal/packages/frugal/src/page/_type/Assets.js",
           "kind": "import-statement",
           "original": "./_type/Assets.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/page/Producer.js": {
+    "../frugal/packages/frugal/src/page/Producer.js": {
       "bytes": 4514,
       "imports": [
         {
-          "path": "../packages/frugal/src/Config.js",
+          "path": "../frugal/packages/frugal/src/Config.js",
           "kind": "import-statement",
           "original": "../Config.js"
         },
         {
-          "path": "../packages/frugal/src/page/Page.js",
+          "path": "../frugal/packages/frugal/src/page/Page.js",
           "kind": "import-statement",
           "original": "../page/Page.js"
         },
         {
-          "path": "../packages/frugal/src/page/PageDescriptor.js",
+          "path": "../frugal/packages/frugal/src/page/PageDescriptor.js",
           "kind": "import-statement",
           "original": "../page/PageDescriptor.js"
         },
         {
-          "path": "../packages/frugal/src/page/PathObject.js",
+          "path": "../frugal/packages/frugal/src/page/PathObject.js",
           "kind": "import-statement",
           "original": "../page/PathObject.js"
         },
         {
-          "path": "../packages/frugal/src/utils/log.js",
+          "path": "../frugal/packages/frugal/src/utils/log.js",
           "kind": "import-statement",
           "original": "../utils/log.js"
         },
         {
-          "path": "../packages/frugal/src/page/Assets.js",
+          "path": "../frugal/packages/frugal/src/page/Assets.js",
           "kind": "import-statement",
           "original": "./Assets.js"
         },
         {
-          "path": "../packages/frugal/src/page/GenerationResponse.js",
+          "path": "../frugal/packages/frugal/src/page/GenerationResponse.js",
           "kind": "import-statement",
           "original": "./GenerationResponse.js"
         }
       ],
       "format": "esm"
     },
-    "../node_modules/mime/dist/types/other.js": {
+    "../frugal/node_modules/mime/dist/types/other.js": {
       "bytes": 27695,
       "imports": [],
       "format": "esm"
     },
-    "../node_modules/mime/dist/types/standard.js": {
+    "../frugal/node_modules/mime/dist/types/standard.js": {
       "bytes": 11155,
       "imports": [],
       "format": "esm"
     },
-    "../node_modules/mime/dist/src/Mime.js": {
+    "../frugal/node_modules/mime/dist/src/Mime.js": {
       "bytes": 4086,
       "imports": [],
       "format": "esm"
     },
-    "../node_modules/mime/dist/src/index.js": {
+    "../frugal/node_modules/mime/dist/src/index.js": {
       "bytes": 264,
       "imports": [
         {
-          "path": "../node_modules/mime/dist/types/other.js",
+          "path": "../frugal/node_modules/mime/dist/types/other.js",
           "kind": "import-statement",
           "original": "../types/other.js"
         },
         {
-          "path": "../node_modules/mime/dist/types/standard.js",
+          "path": "../frugal/node_modules/mime/dist/types/standard.js",
           "kind": "import-statement",
           "original": "../types/standard.js"
         },
         {
-          "path": "../node_modules/mime/dist/src/Mime.js",
+          "path": "../frugal/node_modules/mime/dist/src/Mime.js",
           "kind": "import-statement",
           "original": "./Mime.js"
         },
         {
-          "path": "../node_modules/mime/dist/src/Mime.js",
+          "path": "../frugal/node_modules/mime/dist/src/Mime.js",
           "kind": "import-statement",
           "original": "./Mime.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/utils/http/_type/send.js": {
+    "../frugal/packages/frugal/src/utils/http/_type/send.js": {
       "bytes": 93,
       "imports": [],
       "format": "esm"
     },
-    "../packages/frugal/src/utils/http/send.js": {
+    "../frugal/packages/frugal/src/utils/http/send.js": {
       "bytes": 2382,
       "imports": [
         {
@@ -733,39 +728,39 @@
           "external": true
         },
         {
-          "path": "../node_modules/mime/dist/src/index.js",
+          "path": "../frugal/node_modules/mime/dist/src/index.js",
           "kind": "import-statement",
           "original": "mime"
         },
         {
-          "path": "../packages/frugal/src/utils/fs.js",
+          "path": "../frugal/packages/frugal/src/utils/fs.js",
           "kind": "import-statement",
           "original": "../fs.js"
         },
         {
-          "path": "../packages/frugal/src/utils/hash.js",
+          "path": "../frugal/packages/frugal/src/utils/hash.js",
           "kind": "import-statement",
           "original": "../hash.js"
         },
         {
-          "path": "../packages/frugal/src/utils/readableStream.js",
+          "path": "../frugal/packages/frugal/src/utils/readableStream.js",
           "kind": "import-statement",
           "original": "../readableStream.js"
         },
         {
-          "path": "../packages/frugal/src/utils/http/_type/send.js",
+          "path": "../frugal/packages/frugal/src/utils/http/_type/send.js",
           "kind": "import-statement",
           "original": "./_type/send.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/utils/http/_type/serve.js": {
+    "../frugal/packages/frugal/src/utils/http/_type/serve.js": {
       "bytes": 93,
       "imports": [],
       "format": "esm"
     },
-    "../packages/frugal/src/utils/http/serve.js": {
+    "../frugal/packages/frugal/src/utils/http/serve.js": {
       "bytes": 5708,
       "imports": [
         {
@@ -794,368 +789,368 @@
           "external": true
         },
         {
-          "path": "../packages/frugal/src/utils/hash.js",
+          "path": "../frugal/packages/frugal/src/utils/hash.js",
           "kind": "import-statement",
           "original": "../hash.js"
         },
         {
-          "path": "../packages/frugal/src/utils/readableStream.js",
+          "path": "../frugal/packages/frugal/src/utils/readableStream.js",
           "kind": "import-statement",
           "original": "../readableStream.js"
         },
         {
-          "path": "../packages/frugal/src/utils/http/_type/serve.js",
+          "path": "../frugal/packages/frugal/src/utils/http/_type/serve.js",
           "kind": "import-statement",
           "original": "./_type/serve.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/utils/http.js": {
+    "../frugal/packages/frugal/src/utils/http.js": {
       "bytes": 100,
       "imports": [
         {
-          "path": "../packages/frugal/src/utils/http/cookies.js",
+          "path": "../frugal/packages/frugal/src/utils/http/cookies.js",
           "kind": "import-statement",
           "original": "./http/cookies.js"
         },
         {
-          "path": "../packages/frugal/src/utils/http/send.js",
+          "path": "../frugal/packages/frugal/src/utils/http/send.js",
           "kind": "import-statement",
           "original": "./http/send.js"
         },
         {
-          "path": "../packages/frugal/src/utils/http/serve.js",
+          "path": "../frugal/packages/frugal/src/utils/http/serve.js",
           "kind": "import-statement",
           "original": "./http/serve.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/server/_type/Server.js": {
+    "../frugal/packages/frugal/src/server/_type/Server.js": {
       "bytes": 93,
       "imports": [],
       "format": "esm"
     },
-    "../packages/frugal/src/server/cache/_type/Cache.js": {
+    "../frugal/packages/frugal/src/server/cache/_type/Cache.js": {
       "bytes": 93,
       "imports": [],
       "format": "esm"
     },
-    "../packages/frugal/src/server/cache/Cache.js": {
+    "../frugal/packages/frugal/src/server/cache/Cache.js": {
       "bytes": 1188,
       "imports": [
         {
-          "path": "../packages/frugal/src/page/GenerationResponse.js",
+          "path": "../frugal/packages/frugal/src/page/GenerationResponse.js",
           "kind": "import-statement",
           "original": "../../page/GenerationResponse.js"
         },
         {
-          "path": "../packages/frugal/src/server/cache/_type/Cache.js",
+          "path": "../frugal/packages/frugal/src/server/cache/_type/Cache.js",
           "kind": "import-statement",
           "original": "./_type/Cache.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/server/_type/context.js": {
+    "../frugal/packages/frugal/src/server/_type/context.js": {
       "bytes": 93,
       "imports": [],
       "format": "esm"
     },
-    "../packages/frugal/src/server/context.js": {
+    "../frugal/packages/frugal/src/server/context.js": {
       "bytes": 265,
       "imports": [
         {
-          "path": "../packages/frugal/src/page/Page.js",
+          "path": "../frugal/packages/frugal/src/page/Page.js",
           "kind": "import-statement",
           "original": "../page/Page.js"
         },
         {
-          "path": "../packages/frugal/src/server/_type/context.js",
+          "path": "../frugal/packages/frugal/src/server/_type/context.js",
           "kind": "import-statement",
           "original": "./_type/context.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/server/_type/middleware.js": {
+    "../frugal/packages/frugal/src/server/_type/middleware.js": {
       "bytes": 93,
       "imports": [],
       "format": "esm"
     },
-    "../packages/frugal/src/server/middleware.js": {
+    "../frugal/packages/frugal/src/server/middleware.js": {
       "bytes": 892,
       "imports": [
         {
-          "path": "../packages/frugal/src/server/_type/middleware.js",
+          "path": "../frugal/packages/frugal/src/server/_type/middleware.js",
           "kind": "import-statement",
           "original": "./_type/middleware.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/server/middlewares/dynamicRoute.js": {
+    "../frugal/packages/frugal/src/server/middlewares/dynamicRoute.js": {
       "bytes": 694,
       "imports": [
         {
-          "path": "../packages/frugal/src/page/GenerationResponse.js",
+          "path": "../frugal/packages/frugal/src/page/GenerationResponse.js",
           "kind": "import-statement",
           "original": "../../page/GenerationResponse.js"
         },
         {
-          "path": "../packages/frugal/src/server/context.js",
+          "path": "../frugal/packages/frugal/src/server/context.js",
           "kind": "import-statement",
           "original": "../context.js"
         },
         {
-          "path": "../packages/frugal/src/server/middleware.js",
+          "path": "../frugal/packages/frugal/src/server/middleware.js",
           "kind": "import-statement",
           "original": "../middleware.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/server/middlewares/etag.js": {
+    "../frugal/packages/frugal/src/server/middlewares/etag.js": {
       "bytes": 1491,
       "imports": [
         {
-          "path": "../packages/frugal/src/server/context.js",
+          "path": "../frugal/packages/frugal/src/server/context.js",
           "kind": "import-statement",
           "original": "../context.js"
         },
         {
-          "path": "../packages/frugal/src/server/middleware.js",
+          "path": "../frugal/packages/frugal/src/server/middleware.js",
           "kind": "import-statement",
           "original": "../middleware.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/server/middlewares/forceGenerateStaticPage.js": {
+    "../frugal/packages/frugal/src/server/middlewares/forceGenerateStaticPage.js": {
       "bytes": 1299,
       "imports": [
         {
-          "path": "../packages/frugal/src/page/GenerationResponse.js",
+          "path": "../frugal/packages/frugal/src/page/GenerationResponse.js",
           "kind": "import-statement",
           "original": "../../page/GenerationResponse.js"
         },
         {
-          "path": "../packages/frugal/src/page/PageResponse.js",
+          "path": "../frugal/packages/frugal/src/page/PageResponse.js",
           "kind": "import-statement",
           "original": "../../page/PageResponse.js"
         },
         {
-          "path": "../packages/frugal/src/utils/http.js",
+          "path": "../frugal/packages/frugal/src/utils/http.js",
           "kind": "import-statement",
           "original": "../../utils/http.js"
         },
         {
-          "path": "../packages/frugal/src/server/context.js",
+          "path": "../frugal/packages/frugal/src/server/context.js",
           "kind": "import-statement",
           "original": "../context.js"
         },
         {
-          "path": "../packages/frugal/src/server/middleware.js",
+          "path": "../frugal/packages/frugal/src/server/middleware.js",
           "kind": "import-statement",
           "original": "../middleware.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/server/middlewares/serveFromCacheStaticPage.js": {
+    "../frugal/packages/frugal/src/server/middlewares/serveFromCacheStaticPage.js": {
       "bytes": 688,
       "imports": [
         {
-          "path": "../packages/frugal/src/server/context.js",
+          "path": "../frugal/packages/frugal/src/server/context.js",
           "kind": "import-statement",
           "original": "../context.js"
         },
         {
-          "path": "../packages/frugal/src/server/middleware.js",
+          "path": "../frugal/packages/frugal/src/server/middleware.js",
           "kind": "import-statement",
           "original": "../middleware.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/server/middlewares/refreshJitStaticPage.js": {
+    "../frugal/packages/frugal/src/server/middlewares/refreshJitStaticPage.js": {
       "bytes": 843,
       "imports": [
         {
-          "path": "../packages/frugal/src/server/context.js",
+          "path": "../frugal/packages/frugal/src/server/context.js",
           "kind": "import-statement",
           "original": "../context.js"
         },
         {
-          "path": "../packages/frugal/src/server/middleware.js",
+          "path": "../frugal/packages/frugal/src/server/middleware.js",
           "kind": "import-statement",
           "original": "../middleware.js"
         },
         {
-          "path": "../packages/frugal/src/server/middlewares/serveFromCacheStaticPage.js",
+          "path": "../frugal/packages/frugal/src/server/middlewares/serveFromCacheStaticPage.js",
           "kind": "import-statement",
           "original": "./serveFromCacheStaticPage.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/utils/crypto.js": {
+    "../frugal/packages/frugal/src/utils/crypto.js": {
       "bytes": 1789,
       "imports": [],
       "format": "esm"
     },
-    "../packages/frugal/src/server/middlewares/refreshStaticPage.js": {
+    "../frugal/packages/frugal/src/server/middlewares/refreshStaticPage.js": {
       "bytes": 1774,
       "imports": [
         {
-          "path": "../packages/frugal/src/utils/crypto.js",
+          "path": "../frugal/packages/frugal/src/utils/crypto.js",
           "kind": "import-statement",
           "original": "../../utils/crypto.js"
         },
         {
-          "path": "../packages/frugal/src/server/context.js",
+          "path": "../frugal/packages/frugal/src/server/context.js",
           "kind": "import-statement",
           "original": "../context.js"
         },
         {
-          "path": "../packages/frugal/src/server/middleware.js",
+          "path": "../frugal/packages/frugal/src/server/middleware.js",
           "kind": "import-statement",
           "original": "../middleware.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/server/middlewares/watchModeStaticPage.js": {
+    "../frugal/packages/frugal/src/server/middlewares/watchModeStaticPage.js": {
       "bytes": 1183,
       "imports": [
         {
-          "path": "../packages/frugal/src/page/GenerationResponse.js",
+          "path": "../frugal/packages/frugal/src/page/GenerationResponse.js",
           "kind": "import-statement",
           "original": "../../page/GenerationResponse.js"
         },
         {
-          "path": "../packages/frugal/src/server/context.js",
+          "path": "../frugal/packages/frugal/src/server/context.js",
           "kind": "import-statement",
           "original": "../context.js"
         },
         {
-          "path": "../packages/frugal/src/server/middleware.js",
+          "path": "../frugal/packages/frugal/src/server/middleware.js",
           "kind": "import-statement",
           "original": "../middleware.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/server/middlewares/router.js": {
+    "../frugal/packages/frugal/src/server/middlewares/router.js": {
       "bytes": 2507,
       "imports": [
         {
-          "path": "../packages/frugal/src/page/Assets.js",
+          "path": "../frugal/packages/frugal/src/page/Assets.js",
           "kind": "import-statement",
           "original": "../../page/Assets.js"
         },
         {
-          "path": "../packages/frugal/src/page/Page.js",
+          "path": "../frugal/packages/frugal/src/page/Page.js",
           "kind": "import-statement",
           "original": "../../page/Page.js"
         },
         {
-          "path": "../packages/frugal/src/page/Producer.js",
+          "path": "../frugal/packages/frugal/src/page/Producer.js",
           "kind": "import-statement",
           "original": "../../page/Producer.js"
         },
         {
-          "path": "../packages/frugal/src/server/context.js",
+          "path": "../frugal/packages/frugal/src/server/context.js",
           "kind": "import-statement",
           "original": "../context.js"
         },
         {
-          "path": "../packages/frugal/src/server/middleware.js",
+          "path": "../frugal/packages/frugal/src/server/middleware.js",
           "kind": "import-statement",
           "original": "../middleware.js"
         },
         {
-          "path": "../packages/frugal/src/server/middlewares/dynamicRoute.js",
+          "path": "../frugal/packages/frugal/src/server/middlewares/dynamicRoute.js",
           "kind": "import-statement",
           "original": "./dynamicRoute.js"
         },
         {
-          "path": "../packages/frugal/src/server/middlewares/etag.js",
+          "path": "../frugal/packages/frugal/src/server/middlewares/etag.js",
           "kind": "import-statement",
           "original": "./etag.js"
         },
         {
-          "path": "../packages/frugal/src/server/middlewares/forceGenerateStaticPage.js",
+          "path": "../frugal/packages/frugal/src/server/middlewares/forceGenerateStaticPage.js",
           "kind": "import-statement",
           "original": "./forceGenerateStaticPage.js"
         },
         {
-          "path": "../packages/frugal/src/server/middlewares/refreshJitStaticPage.js",
+          "path": "../frugal/packages/frugal/src/server/middlewares/refreshJitStaticPage.js",
           "kind": "import-statement",
           "original": "./refreshJitStaticPage.js"
         },
         {
-          "path": "../packages/frugal/src/server/middlewares/refreshStaticPage.js",
+          "path": "../frugal/packages/frugal/src/server/middlewares/refreshStaticPage.js",
           "kind": "import-statement",
           "original": "./refreshStaticPage.js"
         },
         {
-          "path": "../packages/frugal/src/server/middlewares/serveFromCacheStaticPage.js",
+          "path": "../frugal/packages/frugal/src/server/middlewares/serveFromCacheStaticPage.js",
           "kind": "import-statement",
           "original": "./serveFromCacheStaticPage.js"
         },
         {
-          "path": "../packages/frugal/src/server/middlewares/watchModeStaticPage.js",
+          "path": "../frugal/packages/frugal/src/server/middlewares/watchModeStaticPage.js",
           "kind": "import-statement",
           "original": "./watchModeStaticPage.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/server/middlewares/staticFile.js": {
+    "../frugal/packages/frugal/src/server/middlewares/staticFile.js": {
       "bytes": 738,
       "imports": [
         {
-          "path": "../packages/frugal/src/utils/http.js",
+          "path": "../frugal/packages/frugal/src/utils/http.js",
           "kind": "import-statement",
           "original": "../../utils/http.js"
         },
         {
-          "path": "../packages/frugal/src/server/context.js",
+          "path": "../frugal/packages/frugal/src/server/context.js",
           "kind": "import-statement",
           "original": "../context.js"
         },
         {
-          "path": "../packages/frugal/src/server/middleware.js",
+          "path": "../frugal/packages/frugal/src/server/middleware.js",
           "kind": "import-statement",
           "original": "../middleware.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/server/middlewares/trailingSlashRedirect.js": {
+    "../frugal/packages/frugal/src/server/middlewares/trailingSlashRedirect.js": {
       "bytes": 540,
       "imports": [
         {
-          "path": "../packages/frugal/src/server/context.js",
+          "path": "../frugal/packages/frugal/src/server/context.js",
           "kind": "import-statement",
           "original": "../context.js"
         },
         {
-          "path": "../packages/frugal/src/server/middleware.js",
+          "path": "../frugal/packages/frugal/src/server/middleware.js",
           "kind": "import-statement",
           "original": "../middleware.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/watcher/livereload/livereload.min.js": {
+    "../frugal/packages/frugal/src/watcher/livereload/livereload.min.js": {
       "bytes": 3702,
       "imports": [],
       "format": "esm"
     },
-    "../packages/frugal/src/server/middlewares/watchModeResponseModification.js": {
+    "../frugal/packages/frugal/src/server/middlewares/watchModeResponseModification.js": {
       "bytes": 1827,
       "imports": [
         {
@@ -1164,198 +1159,198 @@
           "external": true
         },
         {
-          "path": "../packages/frugal/src/utils/readableStream.js",
+          "path": "../frugal/packages/frugal/src/utils/readableStream.js",
           "kind": "import-statement",
           "original": "../../utils/readableStream.js"
         },
         {
-          "path": "../packages/frugal/src/watcher/livereload/livereload.min.js",
+          "path": "../frugal/packages/frugal/src/watcher/livereload/livereload.min.js",
           "kind": "import-statement",
           "original": "../../watcher/livereload/livereload.min.js"
         },
         {
-          "path": "../packages/frugal/src/server/context.js",
+          "path": "../frugal/packages/frugal/src/server/context.js",
           "kind": "import-statement",
           "original": "../context.js"
         },
         {
-          "path": "../packages/frugal/src/server/middleware.js",
+          "path": "../frugal/packages/frugal/src/server/middleware.js",
           "kind": "import-statement",
           "original": "../middleware.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/server/session/_type/sessionStorage.js": {
+    "../frugal/packages/frugal/src/server/session/_type/sessionStorage.js": {
       "bytes": 93,
       "imports": [],
       "format": "esm"
     },
-    "../packages/frugal/src/server/session/sessionStorage.js": {
+    "../frugal/packages/frugal/src/server/session/sessionStorage.js": {
       "bytes": 155,
       "imports": [
         {
-          "path": "../packages/frugal/src/server/session/_type/sessionStorage.js",
+          "path": "../frugal/packages/frugal/src/server/session/_type/sessionStorage.js",
           "kind": "import-statement",
           "original": "./_type/sessionStorage.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/server/session/Session.js": {
+    "../frugal/packages/frugal/src/server/session/Session.js": {
       "bytes": 1260,
       "imports": [
         {
-          "path": "../packages/frugal/src/page/PageDescriptor.js",
+          "path": "../frugal/packages/frugal/src/page/PageDescriptor.js",
           "kind": "import-statement",
           "original": "../../page/PageDescriptor.js"
         },
         {
-          "path": "../packages/frugal/src/server/session/sessionStorage.js",
+          "path": "../frugal/packages/frugal/src/server/session/sessionStorage.js",
           "kind": "import-statement",
           "original": "./sessionStorage.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/server/session/_type/SessionManager.js": {
+    "../frugal/packages/frugal/src/server/session/_type/SessionManager.js": {
       "bytes": 93,
       "imports": [],
       "format": "esm"
     },
-    "../packages/frugal/src/server/session/SessionManager.js": {
+    "../frugal/packages/frugal/src/server/session/SessionManager.js": {
       "bytes": 1926,
       "imports": [
         {
-          "path": "../packages/frugal/src/utils/http.js",
+          "path": "../frugal/packages/frugal/src/utils/http.js",
           "kind": "import-statement",
           "original": "../../utils/http.js"
         },
         {
-          "path": "../packages/frugal/src/server/session/Session.js",
+          "path": "../frugal/packages/frugal/src/server/session/Session.js",
           "kind": "import-statement",
           "original": "./Session.js"
         },
         {
-          "path": "../packages/frugal/src/server/session/_type/SessionManager.js",
+          "path": "../frugal/packages/frugal/src/server/session/_type/SessionManager.js",
           "kind": "import-statement",
           "original": "./_type/SessionManager.js"
         },
         {
-          "path": "../packages/frugal/src/server/session/sessionStorage.js",
+          "path": "../frugal/packages/frugal/src/server/session/sessionStorage.js",
           "kind": "import-statement",
           "original": "./sessionStorage.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/server/Server.js": {
+    "../frugal/packages/frugal/src/server/Server.js": {
       "bytes": 4011,
       "imports": [
         {
-          "path": "../packages/frugal/src/Config.js",
+          "path": "../frugal/packages/frugal/src/Config.js",
           "kind": "import-statement",
           "original": "../Config.js"
         },
         {
-          "path": "../packages/frugal/src/page/Page.js",
+          "path": "../frugal/packages/frugal/src/page/Page.js",
           "kind": "import-statement",
           "original": "../page/Page.js"
         },
         {
-          "path": "../packages/frugal/src/page/Producer.js",
+          "path": "../frugal/packages/frugal/src/page/Producer.js",
           "kind": "import-statement",
           "original": "../page/Producer.js"
         },
         {
-          "path": "../packages/frugal/src/utils/http.js",
+          "path": "../frugal/packages/frugal/src/utils/http.js",
           "kind": "import-statement",
           "original": "../utils/http.js"
         },
         {
-          "path": "../packages/frugal/src/utils/log.js",
+          "path": "../frugal/packages/frugal/src/utils/log.js",
           "kind": "import-statement",
           "original": "../utils/log.js"
         },
         {
-          "path": "../packages/frugal/src/server/_type/Server.js",
+          "path": "../frugal/packages/frugal/src/server/_type/Server.js",
           "kind": "import-statement",
           "original": "./_type/Server.js"
         },
         {
-          "path": "../packages/frugal/src/server/cache/Cache.js",
+          "path": "../frugal/packages/frugal/src/server/cache/Cache.js",
           "kind": "import-statement",
           "original": "./cache/Cache.js"
         },
         {
-          "path": "../packages/frugal/src/server/context.js",
+          "path": "../frugal/packages/frugal/src/server/context.js",
           "kind": "import-statement",
           "original": "./context.js"
         },
         {
-          "path": "../packages/frugal/src/server/middleware.js",
+          "path": "../frugal/packages/frugal/src/server/middleware.js",
           "kind": "import-statement",
           "original": "./middleware.js"
         },
         {
-          "path": "../packages/frugal/src/server/middlewares/router.js",
+          "path": "../frugal/packages/frugal/src/server/middlewares/router.js",
           "kind": "import-statement",
           "original": "./middlewares/router.js"
         },
         {
-          "path": "../packages/frugal/src/server/middlewares/staticFile.js",
+          "path": "../frugal/packages/frugal/src/server/middlewares/staticFile.js",
           "kind": "import-statement",
           "original": "./middlewares/staticFile.js"
         },
         {
-          "path": "../packages/frugal/src/server/middlewares/trailingSlashRedirect.js",
+          "path": "../frugal/packages/frugal/src/server/middlewares/trailingSlashRedirect.js",
           "kind": "import-statement",
           "original": "./middlewares/trailingSlashRedirect.js"
         },
         {
-          "path": "../packages/frugal/src/server/middlewares/watchModeResponseModification.js",
+          "path": "../frugal/packages/frugal/src/server/middlewares/watchModeResponseModification.js",
           "kind": "import-statement",
           "original": "./middlewares/watchModeResponseModification.js"
         },
         {
-          "path": "../packages/frugal/src/server/session/SessionManager.js",
+          "path": "../frugal/packages/frugal/src/server/session/SessionManager.js",
           "kind": "import-statement",
           "original": "./session/SessionManager.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/src/server/cache/MemoryStorage.js": {
+    "../frugal/packages/frugal/src/server/cache/MemoryStorage.js": {
       "bytes": 766,
       "imports": [
         {
-          "path": "../packages/frugal/src/page/GenerationResponse.js",
+          "path": "../frugal/packages/frugal/src/page/GenerationResponse.js",
           "kind": "import-statement",
           "original": "../../page/GenerationResponse.js"
         },
         {
-          "path": "../packages/frugal/src/server/cache/Cache.js",
+          "path": "../frugal/packages/frugal/src/server/cache/Cache.js",
           "kind": "import-statement",
           "original": "./Cache.js"
         }
       ],
       "format": "esm"
     },
-    "../packages/frugal/exports/server/index.js": {
+    "../frugal/packages/frugal/exports/server/index.js": {
       "bytes": 150,
       "imports": [
         {
-          "path": "../packages/frugal/src/server/Server.js",
+          "path": "../frugal/packages/frugal/src/server/Server.js",
           "kind": "import-statement",
           "original": "../../src/server/Server.js"
         },
         {
-          "path": "../packages/frugal/src/server/cache/Cache.js",
+          "path": "../frugal/packages/frugal/src/server/cache/Cache.js",
           "kind": "import-statement",
           "original": "../../src/server/cache/Cache.js"
         },
         {
-          "path": "../packages/frugal/src/server/cache/MemoryStorage.js",
+          "path": "../frugal/packages/frugal/src/server/cache/MemoryStorage.js",
           "kind": "import-statement",
           "original": "../../src/server/cache/MemoryStorage.js"
         }
@@ -1363,7 +1358,7 @@
       "format": "esm"
     },
     "frugal:config": {
-      "bytes": 215,
+      "bytes": 209,
       "imports": [],
       "format": "esm"
     },
@@ -1372,11 +1367,11 @@
       "imports": [],
       "format": "esm"
     },
-    "../packages/frugal/exports/page/index.js": {
+    "../frugal/packages/frugal/exports/page/index.js": {
       "bytes": 48,
       "imports": [
         {
-          "path": "../packages/frugal/src/page/PageResponse.js",
+          "path": "../frugal/packages/frugal/src/page/PageResponse.js",
           "kind": "import-statement",
           "original": "../../src/page/PageResponse.js"
         }
@@ -1392,7 +1387,7 @@
           "original": "./chunk-QGLEQPI7.mjs"
         },
         {
-          "path": "../packages/frugal/exports/page/index.js",
+          "path": "../frugal/packages/frugal/exports/page/index.js",
           "kind": "import-statement",
           "original": "frugal/page"
         }
@@ -1419,7 +1414,7 @@
           "original": "./chunk-QGLEQPI7.mjs"
         },
         {
-          "path": "../packages/frugal/exports/page/index.js",
+          "path": "../frugal/packages/frugal/exports/page/index.js",
           "kind": "import-statement",
           "original": "frugal/page"
         }
@@ -1448,15 +1443,15 @@
       "format": "esm"
     },
     "<stdin>": {
-      "bytes": 460,
+      "bytes": 461,
       "imports": [
         {
-          "path": "../packages/exporter-vercel/src/KvStorage.js",
+          "path": "../frugal/packages/exporter-vercel/src/KvStorage.js",
           "kind": "import-statement",
           "original": "/home/whiteshoulders/projects/frugal/packages/exporter-vercel/src/KvStorage.js"
         },
         {
-          "path": "../packages/frugal/exports/server/index.js",
+          "path": "../frugal/packages/frugal/exports/server/index.js",
           "kind": "import-statement",
           "original": "frugal/server"
         },
@@ -1471,11 +1466,11 @@
           "original": "frugal:manifest"
         }
       ],
-      "format": "esm"
+      "format": "cjs"
     }
   },
   "outputs": {
-    ".vercel/output/functions/index.func/index.mjs": {
+    ".vercel/output/functions/index.func/index.js": {
       "imports": [
         {
           "path": "crypto",
@@ -1484,251 +1479,249 @@
         },
         {
           "path": "node:stream/web",
-          "kind": "import-statement",
+          "kind": "require-call",
           "external": true
         },
         {
           "path": "node:fs",
-          "kind": "import-statement",
+          "kind": "require-call",
           "external": true
         },
         {
           "path": "node:stream",
-          "kind": "import-statement",
+          "kind": "require-call",
           "external": true
         },
         {
           "path": "node:process",
-          "kind": "import-statement",
+          "kind": "require-call",
           "external": true
         },
         {
           "path": "node:os",
-          "kind": "import-statement",
+          "kind": "require-call",
           "external": true
         },
         {
           "path": "node:tty",
-          "kind": "import-statement",
+          "kind": "require-call",
           "external": true
         },
         {
           "path": "node:path",
-          "kind": "import-statement",
+          "kind": "require-call",
           "external": true
         },
         {
           "path": "node:url",
-          "kind": "import-statement",
+          "kind": "require-call",
           "external": true
         },
         {
           "path": "node:path",
-          "kind": "import-statement",
+          "kind": "require-call",
           "external": true
         },
         {
           "path": "node:http",
-          "kind": "import-statement",
+          "kind": "require-call",
           "external": true
         },
         {
           "path": "node:https",
-          "kind": "import-statement",
+          "kind": "require-call",
           "external": true
         },
         {
           "path": "node:path",
-          "kind": "import-statement",
+          "kind": "require-call",
           "external": true
         },
         {
           "path": "node:stream",
-          "kind": "import-statement",
+          "kind": "require-call",
           "external": true
         }
       ],
-      "exports": [
-        "default"
-      ],
+      "exports": [],
       "entryPoint": "<stdin>",
       "inputs": {
-        "../node_modules/crypto-js/core.js": {
-          "bytesInOutput": 4040
+        "../frugal/node_modules/crypto-js/core.js": {
+          "bytesInOutput": 20347
         },
-        "../node_modules/crypto-js/enc-hex.js": {
-          "bytesInOutput": 187
+        "../frugal/node_modules/crypto-js/enc-hex.js": {
+          "bytesInOutput": 479
         },
-        "../node_modules/crypto-js/sha1.js": {
-          "bytesInOutput": 1171
+        "../frugal/node_modules/crypto-js/sha1.js": {
+          "bytesInOutput": 2998
         },
-        "../node_modules/@upstash/redis/chunk-SMBYCQIJ.js": {
-          "bytesInOutput": 52438
+        "../frugal/node_modules/@upstash/redis/chunk-SMBYCQIJ.js": {
+          "bytesInOutput": 77648
         },
-        "../node_modules/@upstash/redis/nodejs.js": {
-          "bytesInOutput": 1970
+        "../frugal/node_modules/@upstash/redis/nodejs.js": {
+          "bytesInOutput": 2957
         },
-        "../node_modules/cookie/index.js": {
-          "bytesInOutput": 2213
+        "../frugal/node_modules/cookie/index.js": {
+          "bytesInOutput": 4352
         },
-        "../node_modules/imurmurhash/imurmurhash.js": {
-          "bytesInOutput": 1445
+        "../frugal/node_modules/imurmurhash/imurmurhash.js": {
+          "bytesInOutput": 3113
         },
-        "../node_modules/path-to-regexp/dist/index.js": {
-          "bytesInOutput": 5912
+        "../frugal/node_modules/path-to-regexp/dist/index.js": {
+          "bytesInOutput": 13806
         },
-        "../node_modules/@vercel/kv/dist/index.js": {
-          "bytesInOutput": 1383
+        "../frugal/node_modules/@vercel/kv/dist/index.js": {
+          "bytesInOutput": 3171
         },
-        "../packages/frugal/src/page/GenerationResponse.js": {
-          "bytesInOutput": 1045
+        "../frugal/packages/frugal/src/page/GenerationResponse.js": {
+          "bytesInOutput": 2220
         },
-        "../packages/frugal/src/utils/http/cookies.js": {
-          "bytesInOutput": 266
+        "../frugal/packages/frugal/src/utils/http/cookies.js": {
+          "bytesInOutput": 556
         },
-        "../packages/frugal/src/utils/jsonValue.js": {
-          "bytesInOutput": 503
+        "../frugal/packages/frugal/src/utils/jsonValue.js": {
+          "bytesInOutput": 1092
         },
-        "../packages/frugal/src/page/PageResponse.js": {
-          "bytesInOutput": 416
+        "../frugal/packages/frugal/src/page/PageResponse.js": {
+          "bytesInOutput": 1015
         },
-        "../packages/frugal/src/utils/hash.js": {
-          "bytesInOutput": 249
+        "../frugal/packages/frugal/src/utils/hash.js": {
+          "bytesInOutput": 650
         },
-        "../packages/frugal/src/utils/readableStream.js": {
-          "bytesInOutput": 377
+        "../frugal/packages/frugal/src/utils/readableStream.js": {
+          "bytesInOutput": 1219
         },
-        "../packages/frugal/src/utils/fs.js": {
-          "bytesInOutput": 405
+        "../frugal/packages/frugal/src/utils/fs.js": {
+          "bytesInOutput": 702
         },
-        "../node_modules/chalk/source/vendor/ansi-styles/index.js": {
-          "bytesInOutput": 2487
+        "../frugal/node_modules/chalk/source/vendor/ansi-styles/index.js": {
+          "bytesInOutput": 5341
         },
-        "../node_modules/chalk/source/vendor/supports-color/index.js": {
-          "bytesInOutput": 1896
+        "../frugal/node_modules/chalk/source/vendor/supports-color/index.js": {
+          "bytesInOutput": 3760
         },
-        "../node_modules/chalk/source/utilities.js": {
-          "bytesInOutput": 323
+        "../frugal/node_modules/chalk/source/utilities.js": {
+          "bytesInOutput": 938
         },
-        "../node_modules/chalk/source/index.js": {
-          "bytesInOutput": 2059
+        "../frugal/node_modules/chalk/source/index.js": {
+          "bytesInOutput": 4573
         },
-        "../packages/frugal/src/utils/log.js": {
-          "bytesInOutput": 1720
+        "../frugal/packages/frugal/src/utils/log.js": {
+          "bytesInOutput": 3648
         },
-        "../packages/frugal/exports/exporter/index.js": {
+        "../frugal/packages/frugal/exports/exporter/index.js": {
           "bytesInOutput": 0
         },
-        "../packages/frugal/src/Config.js": {
-          "bytesInOutput": 1812
+        "../frugal/packages/frugal/src/Config.js": {
+          "bytesInOutput": 3307
         },
-        "../packages/exporter-vercel/src/KvStorage.js": {
-          "bytesInOutput": 136
+        "../frugal/packages/exporter-vercel/src/KvStorage.js": {
+          "bytesInOutput": 590
         },
-        "../packages/frugal/src/page/Page.js": {
-          "bytesInOutput": 3697
+        "../frugal/packages/frugal/src/page/Page.js": {
+          "bytesInOutput": 7950
         },
-        "../packages/frugal/src/page/Assets.js": {
-          "bytesInOutput": 176
+        "../frugal/packages/frugal/src/page/Assets.js": {
+          "bytesInOutput": 835
         },
-        "../packages/frugal/src/page/Producer.js": {
-          "bytesInOutput": 2072
+        "../frugal/packages/frugal/src/page/Producer.js": {
+          "bytesInOutput": 4390
         },
-        "../packages/frugal/src/utils/http.js": {
+        "../frugal/packages/frugal/src/utils/http.js": {
           "bytesInOutput": 0
         },
-        "../packages/frugal/src/utils/http/send.js": {
-          "bytesInOutput": 925
+        "../frugal/packages/frugal/src/utils/http/send.js": {
+          "bytesInOutput": 1913
         },
-        "../node_modules/mime/dist/types/other.js": {
-          "bytesInOutput": 26167
+        "../frugal/node_modules/mime/dist/types/other.js": {
+          "bytesInOutput": 27665
         },
-        "../node_modules/mime/dist/types/standard.js": {
-          "bytesInOutput": 10326
+        "../frugal/node_modules/mime/dist/types/standard.js": {
+          "bytesInOutput": 11128
         },
-        "../node_modules/mime/dist/src/Mime.js": {
-          "bytesInOutput": 1728
+        "../frugal/node_modules/mime/dist/src/Mime.js": {
+          "bytesInOutput": 3797
         },
-        "../node_modules/mime/dist/src/index.js": {
-          "bytesInOutput": 31
+        "../frugal/node_modules/mime/dist/src/index.js": {
+          "bytesInOutput": 80
         },
-        "../packages/frugal/src/utils/http/serve.js": {
-          "bytesInOutput": 1627
+        "../frugal/packages/frugal/src/utils/http/serve.js": {
+          "bytesInOutput": 3874
         },
-        "../packages/frugal/src/server/cache/Cache.js": {
-          "bytesInOutput": 219
+        "../frugal/packages/frugal/src/server/cache/Cache.js": {
+          "bytesInOutput": 953
         },
-        "../packages/frugal/src/server/middleware.js": {
-          "bytesInOutput": 118
+        "../frugal/packages/frugal/src/server/middleware.js": {
+          "bytesInOutput": 567
         },
-        "../packages/frugal/src/server/middlewares/dynamicRoute.js": {
-          "bytesInOutput": 209
-        },
-        "../packages/frugal/src/server/middlewares/etag.js": {
-          "bytesInOutput": 605
-        },
-        "../packages/frugal/src/server/middlewares/forceGenerateStaticPage.js": {
+        "../frugal/packages/frugal/src/server/middlewares/dynamicRoute.js": {
           "bytesInOutput": 418
         },
-        "../packages/frugal/src/server/middlewares/serveFromCacheStaticPage.js": {
-          "bytesInOutput": 240
+        "../frugal/packages/frugal/src/server/middlewares/etag.js": {
+          "bytesInOutput": 1223
         },
-        "../packages/frugal/src/server/middlewares/refreshJitStaticPage.js": {
-          "bytesInOutput": 245
+        "../frugal/packages/frugal/src/server/middlewares/forceGenerateStaticPage.js": {
+          "bytesInOutput": 913
         },
-        "../packages/frugal/src/utils/crypto.js": {
-          "bytesInOutput": 236
+        "../frugal/packages/frugal/src/server/middlewares/serveFromCacheStaticPage.js": {
+          "bytesInOutput": 445
         },
-        "../packages/frugal/src/server/middlewares/refreshStaticPage.js": {
-          "bytesInOutput": 851
+        "../frugal/packages/frugal/src/server/middlewares/refreshJitStaticPage.js": {
+          "bytesInOutput": 526
         },
-        "../packages/frugal/src/server/middlewares/router.js": {
-          "bytesInOutput": 450
+        "../frugal/packages/frugal/src/utils/crypto.js": {
+          "bytesInOutput": 440
         },
-        "../packages/frugal/src/server/middlewares/staticFile.js": {
-          "bytesInOutput": 270
+        "../frugal/packages/frugal/src/server/middlewares/refreshStaticPage.js": {
+          "bytesInOutput": 1535
         },
-        "../packages/frugal/src/server/middlewares/trailingSlashRedirect.js": {
-          "bytesInOutput": 177
+        "../frugal/packages/frugal/src/server/middlewares/router.js": {
+          "bytesInOutput": 1521
         },
-        "../packages/frugal/src/server/middlewares/watchModeResponseModification.js": {
-          "bytesInOutput": 23
+        "../frugal/packages/frugal/src/server/middlewares/staticFile.js": {
+          "bytesInOutput": 463
         },
-        "../packages/frugal/src/server/session/Session.js": {
-          "bytesInOutput": 352
+        "../frugal/packages/frugal/src/server/middlewares/trailingSlashRedirect.js": {
+          "bytesInOutput": 316
         },
-        "../packages/frugal/src/server/session/SessionManager.js": {
-          "bytesInOutput": 596
+        "../frugal/packages/frugal/src/server/middlewares/watchModeResponseModification.js": {
+          "bytesInOutput": 34
         },
-        "../packages/frugal/src/server/Server.js": {
-          "bytesInOutput": 1282
+        "../frugal/packages/frugal/src/server/session/Session.js": {
+          "bytesInOutput": 1153
         },
-        "../packages/frugal/exports/server/index.js": {
+        "../frugal/packages/frugal/src/server/session/SessionManager.js": {
+          "bytesInOutput": 1834
+        },
+        "../frugal/packages/frugal/src/server/Server.js": {
+          "bytesInOutput": 3446
+        },
+        "../frugal/packages/frugal/exports/server/index.js": {
           "bytesInOutput": 0
         },
         "frugal:config": {
-          "bytesInOutput": 184
+          "bytesInOutput": 221
         },
         "frugal:manifest": {
-          "bytesInOutput": 567
+          "bytesInOutput": 923
         },
         "dist/.temp/build/page1-PUQY75DS.mjs": {
-          "bytesInOutput": 704
+          "bytesInOutput": 1213
         },
-        "../packages/frugal/exports/page/index.js": {
+        "../frugal/packages/frugal/exports/page/index.js": {
           "bytesInOutput": 0
         },
         "dist/.temp/build/page2-DIPG744V.mjs": {
-          "bytesInOutput": 207
+          "bytesInOutput": 342
         },
         "dist/.temp/build/page3-BJUTRAJB.mjs": {
-          "bytesInOutput": 334
+          "bytesInOutput": 530
         },
         "<stdin>": {
-          "bytesInOutput": 93
+          "bytesInOutput": 182
         }
       },
-      "bytes": 141130
+      "bytes": 244501
     }
   }
 }

@@ -1,1 +1,1 @@
-import "/home/whiteshoulders/projects/frugal/playground/boo.script.ts";
+import "/home/whiteshoulders/projects/test-frugal/boo.script.ts";

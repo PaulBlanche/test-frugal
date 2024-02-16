@@ -1,14 +1,14 @@
 {
   "inputs": {
-    "dist/.temp/build/global1-115XP90.css": {
+    "dist/.temp/build/global1-ZPSRG2.css": {
       "bytes": 26,
       "imports": []
     },
-    "dist/.temp/build/global1-K0GTQE.css": {
+    "dist/.temp/build/global1-5RCPWP.css": {
       "bytes": 26,
       "imports": []
     },
-    "dist/.temp/build/global2-C4TQ8I.css": {
+    "dist/.temp/build/global2-ID9I6W.css": {
       "bytes": 25,
       "imports": []
     },
@@ -25,22 +25,22 @@
       "imports": []
     },
     "global-facade.css": {
-      "bytes": 282,
+      "bytes": 281,
       "imports": [
         {
-          "path": "dist/.temp/build/global1-115XP90.css",
+          "path": "dist/.temp/build/global1-ZPSRG2.css",
           "kind": "import-rule",
-          "original": "dist/.temp/build/global1-115XP90.css"
+          "original": "dist/.temp/build/global1-ZPSRG2.css"
         },
         {
-          "path": "dist/.temp/build/global1-K0GTQE.css",
+          "path": "dist/.temp/build/global1-5RCPWP.css",
           "kind": "import-rule",
-          "original": "dist/.temp/build/global1-K0GTQE.css"
+          "original": "dist/.temp/build/global1-5RCPWP.css"
         },
         {
-          "path": "dist/.temp/build/global2-C4TQ8I.css",
+          "path": "dist/.temp/build/global2-ID9I6W.css",
           "kind": "import-rule",
-          "original": "dist/.temp/build/global2-C4TQ8I.css"
+          "original": "dist/.temp/build/global2-ID9I6W.css"
         },
         {
           "path": "dist/.temp/build/page1-FD7U4MMT.css",
@@ -61,17 +61,17 @@
     }
   },
   "outputs": {
-    "dist/public/css/stdin-SNP7XIS5.css": {
+    "dist/public/css/stdin-ENQ7LZK6.css": {
       "imports": [],
       "entryPoint": "global-facade.css",
       "inputs": {
-        "dist/.temp/build/global1-115XP90.css": {
+        "dist/.temp/build/global1-ZPSRG2.css": {
           "bytesInOutput": 24
         },
-        "dist/.temp/build/global1-K0GTQE.css": {
+        "dist/.temp/build/global1-5RCPWP.css": {
           "bytesInOutput": 24
         },
-        "dist/.temp/build/global2-C4TQ8I.css": {
+        "dist/.temp/build/global2-ID9I6W.css": {
           "bytesInOutput": 23
         },
         "dist/.temp/build/page1-FD7U4MMT.css": {
@@ -87,7 +87,7 @@
           "bytesInOutput": 0
         }
       },
-      "bytes": 667
+      "bytes": 666
     }
   }
 }

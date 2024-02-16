@@ -8,7 +8,7 @@ export const assets = [
   {
     "type": "css",
     "scope": "global",
-    "path": "/css/stdin-SNP7XIS5.css"
+    "path": "/css/stdin-ENQ7LZK6.css"
   },
   {
     "type": "js",

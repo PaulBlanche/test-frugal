@@ -10,12 +10,12 @@
       "format": "esm"
     },
     "bar.module.css": {
-      "bytes": 336,
+      "bytes": 330,
       "imports": [
         {
           "path": "virtual:bar.module.css-1A6VB2G.frugal-compiled-css-module.css",
           "kind": "import-statement",
-          "original": "/home/whiteshoulders/projects/frugal/playground/bar.module.css-1A6VB2G.frugal-compiled-css-module.css"
+          "original": "/home/whiteshoulders/projects/test-frugal/bar.module.css-1A6VB2G.frugal-compiled-css-module.css"
         },
         {
           "path": "cssModuleHelper:format.js",
@@ -37,12 +37,12 @@
       "format": "esm"
     },
     "dist/.temp/asset/script/page1.ts": {
-      "bytes": 71,
+      "bytes": 65,
       "imports": [
         {
           "path": "boo.script.ts",
           "kind": "import-statement",
-          "original": "/home/whiteshoulders/projects/frugal/playground/boo.script.ts"
+          "original": "/home/whiteshoulders/projects/test-frugal/boo.script.ts"
         }
       ],
       "format": "esm"
