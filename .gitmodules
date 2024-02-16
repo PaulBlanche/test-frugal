@@ -1,0 +1,3 @@
+[submodule "frugal"]
+	path = frugal
+	url = ../frugal
