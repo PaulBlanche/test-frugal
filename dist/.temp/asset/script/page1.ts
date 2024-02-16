@@ -1,0 +1,1 @@
+import "/home/whiteshoulders/projects/frugal/playground/boo.script.ts";

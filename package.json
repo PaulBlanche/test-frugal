@@ -1,0 +1,11 @@
+{
+	"name": "playground",
+	"version": "1.0.0",
+	"type": "module",
+	"dependencies": {
+		"frugal": "file:../frugal/packages/frugal",
+		"@frugal/plugin-css": "file:../frugal/packages/plugin-css",
+		"@frugal/plugin-script": "file:../frugal/packages/plugin-script",
+		"@frugal/exporter-vercel": "file:../frugal/packages/exporter-vercel"
+	}
+}

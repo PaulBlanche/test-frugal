@@ -1,0 +1,93 @@
+{
+  "inputs": {
+    "dist/.temp/build/global1-115XP90.css": {
+      "bytes": 26,
+      "imports": []
+    },
+    "dist/.temp/build/global1-K0GTQE.css": {
+      "bytes": 26,
+      "imports": []
+    },
+    "dist/.temp/build/global2-C4TQ8I.css": {
+      "bytes": 25,
+      "imports": []
+    },
+    "dist/.temp/build/page1-FD7U4MMT.css": {
+      "bytes": 273,
+      "imports": []
+    },
+    "dist/.temp/build/page2-SU6XLPVP.css": {
+      "bytes": 101,
+      "imports": []
+    },
+    "dist/.temp/build/page3-E42U757X.css": {
+      "bytes": 101,
+      "imports": []
+    },
+    "global-facade.css": {
+      "bytes": 282,
+      "imports": [
+        {
+          "path": "dist/.temp/build/global1-115XP90.css",
+          "kind": "import-rule",
+          "original": "dist/.temp/build/global1-115XP90.css"
+        },
+        {
+          "path": "dist/.temp/build/global1-K0GTQE.css",
+          "kind": "import-rule",
+          "original": "dist/.temp/build/global1-K0GTQE.css"
+        },
+        {
+          "path": "dist/.temp/build/global2-C4TQ8I.css",
+          "kind": "import-rule",
+          "original": "dist/.temp/build/global2-C4TQ8I.css"
+        },
+        {
+          "path": "dist/.temp/build/page1-FD7U4MMT.css",
+          "kind": "import-rule",
+          "original": "dist/.temp/build/page1-FD7U4MMT.css"
+        },
+        {
+          "path": "dist/.temp/build/page2-SU6XLPVP.css",
+          "kind": "import-rule",
+          "original": "dist/.temp/build/page2-SU6XLPVP.css"
+        },
+        {
+          "path": "dist/.temp/build/page3-E42U757X.css",
+          "kind": "import-rule",
+          "original": "dist/.temp/build/page3-E42U757X.css"
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "dist/public/css/stdin-SNP7XIS5.css": {
+      "imports": [],
+      "entryPoint": "global-facade.css",
+      "inputs": {
+        "dist/.temp/build/global1-115XP90.css": {
+          "bytesInOutput": 24
+        },
+        "dist/.temp/build/global1-K0GTQE.css": {
+          "bytesInOutput": 24
+        },
+        "dist/.temp/build/global2-C4TQ8I.css": {
+          "bytesInOutput": 23
+        },
+        "dist/.temp/build/page1-FD7U4MMT.css": {
+          "bytesInOutput": 173
+        },
+        "dist/.temp/build/page2-SU6XLPVP.css": {
+          "bytesInOutput": 70
+        },
+        "dist/.temp/build/page3-E42U757X.css": {
+          "bytesInOutput": 70
+        },
+        "global-facade.css": {
+          "bytesInOutput": 0
+        }
+      },
+      "bytes": 667
+    }
+  }
+}
