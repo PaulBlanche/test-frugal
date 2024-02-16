@@ -1358,7 +1358,7 @@
       "format": "esm"
     },
     "frugal:config": {
-      "bytes": 208,
+      "bytes": 209,
       "imports": [],
       "format": "esm"
     },
@@ -1422,7 +1422,7 @@
       "format": "esm"
     },
     "frugal:manifest": {
-      "bytes": 1058,
+      "bytes": 1056,
       "imports": [
         {
           "path": "dist/.temp/build/page1-PUQY75DS.mjs",
@@ -1443,7 +1443,7 @@
       "format": "esm"
     },
     "<stdin>": {
-      "bytes": 461,
+      "bytes": 512,
       "imports": [
         {
           "path": "../frugal/packages/exporter-vercel/src/KvStorage.js",
@@ -1574,7 +1574,7 @@
           "bytesInOutput": 3171
         },
         "../frugal/packages/frugal/src/page/GenerationResponse.js": {
-          "bytesInOutput": 2220
+          "bytesInOutput": 2224
         },
         "../frugal/packages/frugal/src/utils/http/cookies.js": {
           "bytesInOutput": 556
@@ -1616,7 +1616,7 @@
           "bytesInOutput": 3307
         },
         "../frugal/packages/exporter-vercel/src/KvStorage.js": {
-          "bytesInOutput": 590
+          "bytesInOutput": 592
         },
         "../frugal/packages/frugal/src/page/Page.js": {
           "bytesInOutput": 7950
@@ -1625,13 +1625,13 @@
           "bytesInOutput": 835
         },
         "../frugal/packages/frugal/src/page/Producer.js": {
-          "bytesInOutput": 4390
+          "bytesInOutput": 4424
         },
         "../frugal/packages/frugal/src/utils/http.js": {
           "bytesInOutput": 0
         },
         "../frugal/packages/frugal/src/utils/http/send.js": {
-          "bytesInOutput": 1913
+          "bytesInOutput": 1915
         },
         "../frugal/node_modules/mime/dist/types/other.js": {
           "bytesInOutput": 27665
@@ -1646,10 +1646,10 @@
           "bytesInOutput": 80
         },
         "../frugal/packages/frugal/src/utils/http/serve.js": {
-          "bytesInOutput": 3874
+          "bytesInOutput": 3901
         },
         "../frugal/packages/frugal/src/server/cache/Cache.js": {
-          "bytesInOutput": 953
+          "bytesInOutput": 956
         },
         "../frugal/packages/frugal/src/server/middleware.js": {
           "bytesInOutput": 567
@@ -1658,10 +1658,10 @@
           "bytesInOutput": 418
         },
         "../frugal/packages/frugal/src/server/middlewares/etag.js": {
-          "bytesInOutput": 1223
+          "bytesInOutput": 1231
         },
         "../frugal/packages/frugal/src/server/middlewares/forceGenerateStaticPage.js": {
-          "bytesInOutput": 913
+          "bytesInOutput": 916
         },
         "../frugal/packages/frugal/src/server/middlewares/serveFromCacheStaticPage.js": {
           "bytesInOutput": 445
@@ -1679,7 +1679,7 @@
           "bytesInOutput": 1521
         },
         "../frugal/packages/frugal/src/server/middlewares/staticFile.js": {
-          "bytesInOutput": 463
+          "bytesInOutput": 470
         },
         "../frugal/packages/frugal/src/server/middlewares/trailingSlashRedirect.js": {
           "bytesInOutput": 316
@@ -1694,16 +1694,16 @@
           "bytesInOutput": 1834
         },
         "../frugal/packages/frugal/src/server/Server.js": {
-          "bytesInOutput": 3446
+          "bytesInOutput": 3466
         },
         "../frugal/packages/frugal/exports/server/index.js": {
           "bytesInOutput": 0
         },
         "frugal:config": {
-          "bytesInOutput": 220
+          "bytesInOutput": 221
         },
         "frugal:manifest": {
-          "bytesInOutput": 925
+          "bytesInOutput": 923
         },
         "dist/.temp/build/page1-PUQY75DS.mjs": {
           "bytesInOutput": 1213
@@ -1718,10 +1718,10 @@
           "bytesInOutput": 530
         },
         "<stdin>": {
-          "bytesInOutput": 182
+          "bytesInOutput": 225
         }
       },
-      "bytes": 244502
+      "bytes": 244654
     }
   }
 }

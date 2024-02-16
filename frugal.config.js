@@ -8,7 +8,7 @@ export default {
 	self: import.meta.url,
 	pages: ["./page1.ts", "./page2.ts", "./page3.ts"],
 	log: {
-		level: "silent",
+		level: "verbose",
 	},
 	outdir: "./dist",
 	exporter: vercel(),

@@ -104,7 +104,7 @@
       "format": "esm"
     },
     "frugal.config.js": {
-      "bytes": 663,
+      "bytes": 664,
       "imports": [
         {
           "path": "frugal",
@@ -229,7 +229,7 @@
       },
       "bytes": 0
     },
-    "dist/.temp/build/frugal.config-SBNTKZPO.mjs": {
+    "dist/.temp/build/frugal.config-WLFUFMZG.mjs": {
       "imports": [
         {
           "path": "frugal",
@@ -258,10 +258,10 @@
       "entryPoint": "frugal.config.js",
       "inputs": {
         "frugal.config.js": {
-          "bytesInOutput": 529
+          "bytesInOutput": 530
         }
       },
-      "bytes": 596
+      "bytes": 597
     },
     "dist/.temp/build/page1-FD7U4MMT.css": {
       "imports": [],
