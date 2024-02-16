@@ -8,5 +8,8 @@
 		"@frugal/plugin-script": "file:../frugal/packages/plugin-script",
 		"dotenv": "^16.4.4",
 		"frugal": "file:../frugal/packages/frugal"
+	},
+	"scripts": {
+		"build": "node build.js"
 	}
 }
