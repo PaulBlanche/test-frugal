@@ -1,4 +1,4 @@
-import * as frugal from "frugal/page";
+import * as frugal from "frugal-node/page";
 
 import "./test.css";
 import "./boo.script.ts";

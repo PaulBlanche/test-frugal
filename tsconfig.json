@@ -9,6 +9,7 @@
 		"module": "NodeNext",
 		"lib": ["DOM", "DOM.Iterable", "ESNext"],
 		"allowImportingTsExtensions": true,
-		"forceConsistentCasingInFileNames": false
+		"forceConsistentCasingInFileNames": false,
+		"skipLibCheck": false
 	},
 }
