@@ -1,7 +1,7 @@
-import * as frugal from "frugal";
-import { css } from "@frugal/plugin-css";
-import { script } from "@frugal/plugin-script";
-import { vercel } from "@frugal/exporter-vercel";
+import * as frugal from "frugal-node";
+import { css } from "@frugal-node/plugin-css";
+import { script } from "@frugal-node/plugin-script";
+import { vercel } from "@frugal-node/exporter-vercel";
 
 /** @type {frugal.Config} */
 export default {
