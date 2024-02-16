@@ -6166,7 +6166,7 @@ var Server = class {
 };
 
 // frugal:config
-var config_default = { "self": "file:///home/whiteshoulders/projects/test-frugal/frugal.config.js", "pages": ["./page1.ts", "./page2.ts", "./page3.ts"], "log": { "level": "verbose" }, "outdir": "./dist", "plugins": [] };
+var config_default = { "self": "file:///home/whiteshoulders/projects/test-frugal/frugal.config.js", "pages": ["./page1.ts", "./page2.ts", "./page3.ts"], "log": { "level": "silent" }, "outdir": "./dist", "plugins": [] };
 
 // frugal:manifest
 var manifest_exports = {};
@@ -6265,8 +6265,8 @@ ${context.assets.get("js").map((asset) => JSON.stringify(asset)).join(" ")}`;
 }
 
 // frugal:manifest
-var id = "W17RZ8";
-var config2 = "QI019N";
+var id = "19WKE5E";
+var config2 = "10760D7";
 var assets = [
   {
     "type": "css",

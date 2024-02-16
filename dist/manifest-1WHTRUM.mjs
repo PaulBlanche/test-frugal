@@ -2,8 +2,8 @@ import * as descriptor_1PE4DH1 from "./.temp/build/page1-PUQY75DS.mjs";
 import * as descriptor_16FYM1P from "./.temp/build/page2-DIPG744V.mjs";
 import * as descriptor_LPLZXQ from "./.temp/build/page3-BJUTRAJB.mjs";
     
-export const id = "W17RZ8";
-export const config = "QI019N";
+export const id = "19WKE5E";
+export const config = "10760D7";
 export const assets = [
   {
     "type": "css",

@@ -1358,7 +1358,7 @@
       "format": "esm"
     },
     "frugal:config": {
-      "bytes": 209,
+      "bytes": 208,
       "imports": [],
       "format": "esm"
     },
@@ -1422,7 +1422,7 @@
       "format": "esm"
     },
     "frugal:manifest": {
-      "bytes": 1056,
+      "bytes": 1058,
       "imports": [
         {
           "path": "dist/.temp/build/page1-PUQY75DS.mjs",
@@ -1700,10 +1700,10 @@
           "bytesInOutput": 0
         },
         "frugal:config": {
-          "bytesInOutput": 221
+          "bytesInOutput": 220
         },
         "frugal:manifest": {
-          "bytesInOutput": 923
+          "bytesInOutput": 925
         },
         "dist/.temp/build/page1-PUQY75DS.mjs": {
           "bytesInOutput": 1213
@@ -1721,7 +1721,7 @@
           "bytesInOutput": 182
         }
       },
-      "bytes": 244501
+      "bytes": 244502
     }
   }
 }

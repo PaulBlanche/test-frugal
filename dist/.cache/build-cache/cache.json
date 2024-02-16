@@ -2,15 +2,15 @@
   "current": {
     "/page": {
       "path": "/page",
-      "hash": "4L0QP4",
+      "hash": "1FAWOF2",
       "headers": [],
       "status": 200,
-      "age": "old",
+      "age": "new",
       "doc": "3VL17S"
     },
     "/page1/1/1": {
       "path": "/page1/1/1",
-      "hash": "1KQ1SQB",
+      "hash": "1JNRKAN",
       "headers": [
         [
           "baz",
@@ -22,7 +22,7 @@
         ]
       ],
       "status": 400,
-      "age": "old",
+      "age": "new",
       "doc": "CRDI0Q"
     }
   },
