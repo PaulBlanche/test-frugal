@@ -3930,9 +3930,9 @@ var LiveGenerationResponse = class {
     return create().update(this.#pageResponse.dataHash).update(this.#init.path).update(this.#init.moduleHash).update(this.#init.configHash).digest();
   }
 };
-function toResponse(response2) {
-  const headers = new Headers(response2.headers);
-  const body = response2.body;
+function toResponse(response) {
+  const headers = new Headers(response.headers);
+  const body = response.body;
   if (!headers.has("content-type")) {
     headers.set("Content-Type", "text/html; charset=utf-8");
   }
@@ -3943,7 +3943,7 @@ function toResponse(response2) {
     typeof body === "string" ? body : body === void 0 ? void 0 : toReadableStream(body),
     {
       headers,
-      status: response2.status
+      status: response.status
     }
   );
 }
@@ -4750,8 +4750,8 @@ var KvStorage = class {
    * @param {exporter.SerializedGenerationResponse} response
    * @returns {Promise<void>}
    */
-  async set(path4, response2) {
-    await kv.set(path4, response2);
+  async set(path4, response) {
+    await kv.set(path4, response);
   }
   /**
    * @param {string} path
@@ -5125,7 +5125,7 @@ var Producer = class {
       resolve: (path4) => this.#config.resolve(path4)
     });
     const responses = await Promise.all(pathList.map((params) => this.build(params)));
-    if (responses.some((response2) => response2 === void 0)) {
+    if (responses.some((response) => response === void 0)) {
       throw new ProducerError(
         `No response returned while building route "${this.#page.route}"`
       );
@@ -5143,19 +5143,19 @@ var Producer = class {
       throw new ProducerError("Can't build dynamic page");
     }
     const path4 = this.#page.compile(params);
-    const response2 = await this.#page.build({
+    const response = await this.#page.build({
       path: path4,
       params,
       resolve: (path5) => this.#config.resolve(path5)
     });
-    if (response2 === void 0) {
+    if (response === void 0) {
       log(
         `No response returned while building route "${this.#page.route}" for params "${JSON.stringify(params)}"`,
         { level: "warning", scope: "Builder" }
       );
       return void 0;
     }
-    return new LiveGenerationResponse(response2, {
+    return new LiveGenerationResponse(response, {
       render: (data) => this.#page.render({
         path: path4,
         params,
@@ -5175,30 +5175,30 @@ var Producer = class {
    * @param {pageDescriptor.State} state
    * @param {pageDescriptor.Session | undefined} session
    */
-  async generate(request2, path4, params, state, session) {
-    const response2 = this.#page.type === "static" && request2.method === "GET" ? await this.#page.build({
+  async generate(request, path4, params, state, session) {
+    const response = this.#page.type === "static" && request.method === "GET" ? await this.#page.build({
       params,
       path: path4,
       resolve: (path5) => this.#config.resolve(path5),
       state,
-      request: request2,
+      request,
       session
     }) : await this.#page.generate({
       params,
       path: path4,
       resolve: (path5) => this.#config.resolve(path5),
       state,
-      request: request2,
+      request,
       session
     });
-    if (response2 === void 0) {
+    if (response === void 0) {
       log(
-        `No response returned while generating route "${request2.method} ${this.#page.route}" for params "${JSON.stringify(params)}"`,
+        `No response returned while generating route "${request.method} ${this.#page.route}" for params "${JSON.stringify(params)}"`,
         { level: "warning", scope: "Builder" }
       );
       return void 0;
     }
-    return new LiveGenerationResponse(response2, {
+    return new LiveGenerationResponse(response, {
       render: (data) => this.#page.render({
         path: path4,
         params,
@@ -5219,19 +5219,19 @@ var Producer = class {
       throw new ProducerError("Can't refresh dynamic page");
     }
     const path4 = this.#page.compile(params);
-    const response2 = await this.#page.build({
+    const response = await this.#page.build({
       path: path4,
       params,
       resolve: (path5) => this.#config.resolve(path5)
     });
-    if (response2 === void 0) {
+    if (response === void 0) {
       log(
         `No response returned while refreshing route "${this.#page.route}" for params "${JSON.stringify(params)}"`,
         { level: "warning", scope: "Builder" }
       );
       return void 0;
     }
-    return new LiveGenerationResponse(response2, {
+    return new LiveGenerationResponse(response, {
       render: (data) => this.#page.render({
         path: path4,
         params,
@@ -5355,8 +5355,8 @@ var Mime_default = Mime;
 var src_default2 = new Mime_default(standard_default, other_default)._freeze();
 
 // ../frugal/packages/frugal/src/utils/http/send.js
-async function send(request2, options) {
-  const url2 = new URL(request2.url);
+async function send(request, options) {
+  const url2 = new URL(request.url);
   const decodedPathname = decodeURIComponent(url2.pathname);
   const normalizedPath = path2.normalize(decodedPathname);
   if (normalizedPath !== decodedPathname) {
@@ -5421,14 +5421,14 @@ var http = __toESM(require("node:http"), 1);
 var https = __toESM(require("node:https"), 1);
 var path3 = __toESM(require("node:path"), 1);
 var stream2 = __toESM(require("node:stream"), 1);
-function serve(handler2, { port = 8e3, hostname = "0.0.0.0", onListen, signal, ...secureOptions } = {}) {
+function serve(handler, { port = 8e3, hostname = "0.0.0.0", onListen, signal, ...secureOptions } = {}) {
   const server2 = secureOptions.cert ? https.createServer(
     {
       cert: secureOptions.cert,
       key: secureOptions.key
     },
-    nativeHandler(handler2)
-  ) : http.createServer(nativeHandler(handler2));
+    nativeHandler(handler)
+  ) : http.createServer(nativeHandler(handler));
   server2.listen(port, hostname, () => {
     onListen?.({ hostname, port });
   });
@@ -5436,7 +5436,7 @@ function serve(handler2, { port = 8e3, hostname = "0.0.0.0", onListen, signal, .
     signal?.addEventListener("abort", () => server2.close(() => setTimeout(res, 100)));
   });
 }
-function nativeHandler(handler2) {
+function nativeHandler(handler) {
   return async (req, res) => {
     const host = req.headers.host ?? "localhost";
     const protocol = (
@@ -5445,28 +5445,28 @@ function nativeHandler(handler2) {
     );
     const origin = `${protocol}//${host}`;
     const parsed = new URL(origin);
-    const request2 = toRequest(origin, req);
-    const response2 = await handler2(request2, {
+    const request = toRequest(origin, req);
+    const response = await handler(request, {
       hostname: parsed.hostname,
       port: parsed.port,
-      identifier: await identifier(request2, req)
+      identifier: await identifier(request, req)
     });
-    if (isEventStreamResponse(response2)) {
+    if (isEventStreamResponse(response)) {
       req.on("close", () => {
-        response2.close();
+        response.close();
       });
     }
-    answerWithResponse(response2, res);
+    answerWithResponse(response, res);
   };
 }
-async function answerWithResponse(response2, res) {
-  res.writeHead(response2.status, response2.statusText, toOutgoingHeaders(response2.headers));
-  if (response2.body !== null) {
-    for await (const chunk of fromReadableStream(response2.body)) {
+async function answerWithResponse(response, res) {
+  res.writeHead(response.status, response.statusText, toOutgoingHeaders(response.headers));
+  if (response.body !== null) {
+    for await (const chunk of fromReadableStream(response.body)) {
       res.write(chunk);
     }
   }
-  if (!isEventStreamResponse(response2)) {
+  if (!isEventStreamResponse(response)) {
     res.end();
   }
   return;
@@ -5516,24 +5516,24 @@ function toRequest(origin, req) {
     duplex: body && "half"
   });
 }
-async function identifier(request2, req) {
-  const requestUrl = new URL(request2.url);
+async function identifier(request, req) {
+  const requestUrl = new URL(request.url);
   const normalizedInternalUrl = path3.normalize(decodeURIComponent(requestUrl.pathname)) + requestUrl.search;
-  const remoteHostname = getRemoteAddress(request2, req) ?? "???";
-  const method = request2.method;
+  const remoteHostname = getRemoteAddress(request, req) ?? "???";
+  const method = request.method;
   const identifier2 = create().update(normalizedInternalUrl).update(remoteHostname).update(method).update(String(Date.now())).digest();
   return identifier2;
 }
-function getRemoteAddress(request2, req) {
-  const xForwardedFor = request2.headers.get("X-Forwarded-For");
+function getRemoteAddress(request, req) {
+  const xForwardedFor = request.headers.get("X-Forwarded-For");
   if (!xForwardedFor) {
     return req.socket.remoteAddress;
   }
   const values = xForwardedFor.split(/\s*,\s*/);
   return values[0];
 }
-function isEventStreamResponse(response2) {
-  return "close" in response2;
+function isEventStreamResponse(response) {
+  return "close" in response;
 }
 
 // ../frugal/packages/frugal/src/server/cache/Cache.js
@@ -5550,8 +5550,8 @@ var Cache = class {
    * @param {generationResponse.LiveGenerationResponse} response
    * @returns {Promise<void>}
    */
-  async add(response2) {
-    return this.#cacheStorage.set(response2.path, await response2.serialize());
+  async add(response) {
+    return this.#cacheStorage.set(response.path, await response.serialize());
   }
   /**
    * @param {string} path
@@ -5613,9 +5613,9 @@ async function dynamicRoute(context, next) {
 
 // ../frugal/packages/frugal/src/server/middlewares/etag.js
 async function etag(context, next) {
-  const response2 = await next(context);
-  if (ifNoneMatch(context.request, response2)) {
-    return response2;
+  const response = await next(context);
+  if (ifNoneMatch(context.request, response)) {
+    return response;
   }
   context.log("response Etag headers match request If-None-Match header, send 304", {
     level: "debug",
@@ -5625,18 +5625,18 @@ async function etag(context, next) {
     status: 304,
     //not modified
     statusText: "Not Modified",
-    headers: headersNotModified(response2.headers)
+    headers: headersNotModified(response.headers)
   });
 }
-function ifNoneMatch(request2, response2) {
-  const ifNoneMatch2 = request2.headers.get("If-None-Match");
+function ifNoneMatch(request, response) {
+  const ifNoneMatch2 = request.headers.get("If-None-Match");
   if (ifNoneMatch2 === null) {
     return true;
   }
   if (ifNoneMatch2.trim() === "*") {
     return false;
   }
-  const etag2 = response2.headers.get("Etag");
+  const etag2 = response.headers.get("Etag");
   const tags = ifNoneMatch2.split(/\s*,\s*/);
   return etag2 === null || !tags.includes(etag2);
 }
@@ -5680,9 +5680,9 @@ async function forceGenerateStaticPage(context, next) {
   if (generationResponse === void 0) {
     return next(context);
   }
-  const response2 = toResponse(generationResponse);
+  const response = toResponse(generationResponse);
   if (forceGenerate) {
-    setCookie(response2.headers, {
+    setCookie(response.headers, {
       httpOnly: true,
       name: FORCE_GENERATE_COOKIE,
       value: "false",
@@ -5690,7 +5690,7 @@ async function forceGenerateStaticPage(context, next) {
       maxAge: 0
     });
   }
-  return response2;
+  return response;
 }
 
 // ../frugal/packages/frugal/src/server/middlewares/serveFromCacheStaticPage.js
@@ -5871,16 +5871,16 @@ var staticRoute = composeMiddleware(
 // ../frugal/packages/frugal/src/server/middlewares/staticFile.js
 var ONE_YEAR_IN_SECONDS = 31536e3;
 async function staticFile(context, next) {
-  const response2 = await send(context.request, { rootDir: context.config.publicDir });
-  if (!response2.ok) {
-    return response2;
+  const response = await send(context.request, { rootDir: context.config.publicDir });
+  if (!response.ok) {
+    return response;
   }
-  const headers = new Headers(response2.headers);
+  const headers = new Headers(response.headers);
   headers.set("Cache-Control", `max-age=${ONE_YEAR_IN_SECONDS}, immutable`);
-  return new Response(response2.body, {
+  return new Response(response.body, {
     headers,
-    status: response2.status,
-    statusText: response2.statusText
+    status: response.status,
+    statusText: response.statusText
   });
 }
 
@@ -6100,21 +6100,21 @@ var Server = class {
    * @returns {http.Handler}
    */
   handler(secure) {
-    return async (request2, info) => {
+    return async (request, info) => {
       const identifiedLog = (messageOrError, config3) => {
         log(messageOrError, {
           ...config3,
           scope: `${config3?.scope ?? "???"}:${info.identifier}`
         });
       };
-      identifiedLog(`${info.hostname} [${request2.method}] ${request2.url}`, {
+      identifiedLog(`${info.hostname} [${request.method}] ${request.url}`, {
         scope: "Server",
         level: "debug"
       });
       try {
-        const session = await this.#sessionManager?.get(request2.headers);
+        const session = await this.#sessionManager?.get(request.headers);
         const context = {
-          request: request2,
+          request,
           info,
           config: this.#config,
           state: {},
@@ -6123,9 +6123,9 @@ var Server = class {
           log: identifiedLog,
           cache: this.#cache,
           session,
-          url: new URL(request2.url)
+          url: new URL(request.url)
         };
-        const response2 = await this.#middleware(context, () => {
+        const response = await this.#middleware(context, () => {
           return Promise.resolve(
             new Response(null, {
               status: 400
@@ -6133,9 +6133,9 @@ var Server = class {
           );
         });
         if (session) {
-          await this.#sessionManager?.persist(session, response2.headers);
+          await this.#sessionManager?.persist(session, response.headers);
         }
-        return response2;
+        return response;
       } catch (error) {
         identifiedLog(error, { scope: "FrugalServer" });
         return new Response(null, {
@@ -6150,8 +6150,8 @@ var Server = class {
    */
   serve({ signal, onListen, port } = {}) {
     const secure = this.#config.server.secure;
-    const handler2 = this.handler(secure);
-    return serve(handler2, {
+    const handler = this.handler(secure);
+    return serve(handler, {
       port: port ?? this.#config.server.port,
       signal,
       onListen: (args) => {
@@ -6308,8 +6308,7 @@ var server = new Server({
   manifest: manifest_exports,
   cache: new Cache(new KvStorage())
 });
-var handler = server.nativeHandler(true);
-module.exports = handler(request, response);
+module.exports = server.nativeHandler(true);
 /*! Bundled license information:
 
 cookie/index.js:
