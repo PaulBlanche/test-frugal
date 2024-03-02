@@ -1,6 +1,7 @@
 import * as frugal from "frugal-node/config";
+import { coco } from "./foo.js";
 
-const foo = "config";
+coco();
 
 /** @type {frugal.Config} */
 export default {
@@ -10,6 +11,14 @@ export default {
 	log: {
 		level: "verbose",
 	},
-	serverConfig: new URL(`./config/frugal.config.server.js`, import.meta.url),
-	buildConfig: new URL(`./config/frugal.${foo}.build.js`, import.meta.url),
+	server: {
+		middlewares: [
+			async (context, next) => {
+				console.log("before middleware");
+				const response = await next(context);
+				console.log("after middleware");
+				return response;
+			},
+		],	
+	}
 };
