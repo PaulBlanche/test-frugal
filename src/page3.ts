@@ -6,8 +6,8 @@ export const type = "dynamic";
 
 export const route = "/page3/:id/:od";
 
-export function generate({ params }: frugal.GenerateContext<typeof route>) {
-	return new frugal.DataResponse({ params });
+export function generate(context: frugal.GenerateContext<typeof route>) {
+	return context.data({ params: context.params });
 }
 
 export function render(context: frugal.RenderContext<typeof route, any>) {

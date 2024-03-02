@@ -2,6 +2,7 @@
 	"name": "playground",
 	"version": "1.0.0",
 	"type": "module",
+	"private": true,
 	"dependencies": {
 		"@frugal-node/exporter-vercel": "^1.0.0",
 		"@frugal-node/plugin-css": "^1.0.0",
